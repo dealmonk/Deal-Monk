@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/lLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Cheers"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Your Deal is Confirmed!"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/lLayoutTitle"
+        android:background="@drawable/mydeal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtmiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="CHECK-IN on reaching the restaurent to get Your DEAL PASS."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtMiddle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="(You can also Check-in from the Home page)"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lLayoutMiddle"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/txtOk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="OK"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#00bfff" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#d9d9d9"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Sorry. There are no live deals for this Restaurant at the moment."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"
+        android:gravity="center"
+         />
+    
+    <ListView
+        android:id="@+id/dealofferlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_marginTop="15dp"
+        android:dividerHeight="0dp"  >
+ 
+    </ListView>
+    
+</RelativeLayout>

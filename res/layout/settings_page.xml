@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9" >
+
+    <LinearLayout
+        android:id="@+id/lLayoutSMSAlert_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <ImageView
+            android:id="@+id/imageViewSMSAlert_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.7"
+            android:adjustViewBounds="true"
+            android:background="@drawable/smsalert32g"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tvSMSAlerts_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="2.5"
+            android:alpha="0.90"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="SMS Alerts"
+            android:textColor="#000000"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+        <!-- android:background="@drawable/checkbox_selector" -->
+
+        <ToggleButton
+            android:id="@+id/toggleBtnSMSAlert_DealMonkSettings"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_selector"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBelowSMSAlerts_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lLayoutSMSAlert_DealMonkSettings"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutEmailAlerts_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/viewBelowSMSAlerts_DealMonkSettings"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <ImageView
+            android:id="@+id/imageViewEmailAlerts_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.6"
+            android:adjustViewBounds="true"
+            android:background="@drawable/email32g"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tvEmailAlerts_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="3"
+            android:alpha="0.90"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="Email Alerts"
+            android:textColor="#000000"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnEmailAlerts_DealMonkSettings"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox_selector"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBelowEmailAlerts_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lLayoutEmailAlerts_DealMonkSettings"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutShareFeedback_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/viewBelowEmailAlerts_DealMonkSettings"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewShareFeedback_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/sharefeedback32g" 
+            android:layout_weight="0.6"/>
+
+        <TextView
+            android:id="@+id/tvShareFeedback_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="3"
+            android:alpha="0.90"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="Share Feedback"
+            android:textColor="#000000"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+        <View android:id="@+id/view3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBelowShareFeedBack_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lLayoutShareFeedback_DealMonkSettings"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutAboutUs_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewBelowShareFeedBack_DealMonkSettings"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:orientation="horizontal" 
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/imageViewAboutUs_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/aboutus32g"
+            android:layout_weight="0.6" />
+
+        <TextView
+            android:id="@+id/tvAboutUs_DealMonkSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="3"
+            android:alpha="0.90"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="About Us"
+            android:textColor="#000000"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+        <View android:id="@+id/view4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBelowAboutUs_DealMonkSettings"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lLayoutAboutUs_DealMonkSettings"
+        android:background="#000000" />
+
+</RelativeLayout>

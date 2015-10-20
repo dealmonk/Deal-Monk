@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d9d9d9" >
+
+<ImageView
+        android:id="@+id/dmlogo_Aboutus"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/dmlogo256" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutbottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnTermOfService"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtline"
+           
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="      Terms of Service"
+            android:textAllCaps="false"
+            android:textColor="#ff0048"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnPrivacypolicy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btnTermOfService"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="      Privacy Policy"
+            android:textAllCaps="false"
+            android:textColor="#ff0048"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dmlogo_Aboutus"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:text="Discover Restaurant Offers Right Here Right Now."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dmlogo_Aboutus"
+        android:layout_alignLeft="@+id/dmlogo_Aboutus"
+        android:text="......................................................." />
+
+  
+</RelativeLayout>

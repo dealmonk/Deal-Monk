@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rLayoutConfirmation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9" >
+
+    <TextView
+        android:id="@+id/thankNote_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDealMonkLogo_confirm"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="Confirm to get the Deal!"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lLayoutBottomButtons_Confirm"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/thankNote_confirm" >
+
+        <RelativeLayout
+            android:id="@+id/rLayout_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- new one -->
+
+            <LinearLayout
+                android:id="@+id/lLayoutRestaurantName_Confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgRestaurantName_Confirm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/restaurant32g" />
+
+                <TextView
+                    android:id="@+id/txtRestaurantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lLayoutRestaurantLocation_Confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lLayoutRestaurantName_Confirm"
+                android:layout_marginTop="1dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgRestaurantLocation_Confirm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/location32g" />
+
+                <TextView
+                    android:id="@+id/txtRestaurantLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lLayoutCalender_Confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lLayoutRestaurantLocation_Confirm"
+                android:layout_marginTop="1dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgCalender_Confirm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/calender32g" />
+
+                <TextView
+                    android:id="@+id/txtCalender_Confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lLayoutDiscount_Confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lLayoutCalender_Confirm"
+                android:layout_marginTop="1dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgDiscount_Confirm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/discount32g" />
+
+                <TextView
+                    android:id="@+id/txtOfffertime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lLayoutOffer_Confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lLayoutDiscount_Confirm"
+                android:layout_marginTop="1dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgOffer_Confirm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/offer32g" />
+
+                <TextView
+                    android:id="@+id/txtOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lLayoutDinner_Confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lLayoutOffer_Confirm"
+                android:layout_marginTop="1dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgDinner_Confirm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/diners32g" />
+
+                <ImageView
+                    android:id="@+id/btnMinus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:layout_weight="0.32"
+                    android:src="@drawable/minus32g" />
+
+                <TextView
+                    android:id="@+id/txtCounterDinner"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/btnPlus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="0.32"
+                    android:src="@drawable/plus32g" />
+
+                <Button
+                    android:id="@+id/btnConfirm_Confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/roundbtn_confirm"
+                    android:text="Confirm"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lLayoutBottomButtons_Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCheckIn_Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#464646"
+            android:drawableTop="@drawable/checkinw"
+            android:paddingTop="4dp"
+            android:text="Check-In"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnCall_Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.44"
+            android:background="#464646"
+            android:drawableTop="@drawable/callw"
+            android:paddingTop="4dp"
+            android:text="Call to Book Table"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnDirection_Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="#464646"
+            android:drawableTop="@drawable/navigation64w"
+            android:paddingTop="4dp"
+            android:text="Directions"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDealMonkLogo_confirm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/dealmonklogo" />
+
+</RelativeLayout>

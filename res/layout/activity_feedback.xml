@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9" >
+
+        <LinearLayout
+        android:id="@+id/lLayoutFeedback_Feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0048"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutWrite_Feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/lLayoutFeedback_Feedback"
+        >
+        
+        <EditText
+            android:id="@+id/etFeedBackWrite_Feedback"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:maxLength="250"
+            android:inputType="textMultiLine"            
+            android:hint="Write..."
+             />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f80048"            
+            android:layout_gravity="right"
+            android:text="Send"
+            android:textColor="#ffffff"            
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imgDealoffer_Dealoffer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/lLayoutDetailsDealoffer_Dealoffer"
+        android:background="@drawable/mydeal" />
+
+    
+
+<TabHost android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@android:id/tabhost"
+         android:layout_below="@+id/imgDealoffer_Dealoffer"
+         >
+         
+        <LinearLayout 
+                android:id="@+id/LinearLayout01"
+                android:orientation="vertical" 
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+                
+                <TabWidget 
+                    android:id="@android:id/tabs"
+                    android:layout_height="wrap_content" 
+                    android:layout_width="fill_parent">
+                </TabWidget>
+                
+                <FrameLayout 
+                    android:id="@android:id/tabcontent"
+                    android:layout_height="fill_parent"
+                     android:layout_width="fill_parent">
+                </FrameLayout>
+                
+        </LinearLayout>
+
+</TabHost>
+    
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bb181818"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtRestaurentName_Deal"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLike_Deal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/like"
+        android:layout_marginTop="6dp" />
+
+</RelativeLayout>

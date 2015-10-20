@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"     >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d9d9d9"     >
+
+    <RelativeLayout
+        android:id="@+id/rLayoutBelowrLayoutReferrals_referrals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d9d9d9" >
+                
+        <com.deal.monk.profileimg.RoundedImageView
+                 android:id="@+id/imageView_round"
+                 android:layout_width="105dp"
+                 android:layout_height="105dp"
+                 android:layout_alignParentTop="true"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginTop="25dp"
+                 android:scaleType="centerInside"
+                 android:src="@drawable/userphoto128" />
+
+        <TextView
+            android:id="@+id/tvFullName_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imageView_round"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint=""
+            android:minHeight="25dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:typeface="normal" />
+
+        <View
+            android:id="@+id/viewAboveReferBySMS_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvFullName_referrals"
+            android:layout_marginTop="25dp"
+            android:alpha="0.70"
+            android:background="#000000" />
+        
+      
+
+        <LinearLayout
+            android:id="@+id/lLayoutReferBySMS_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewAboveReferBySMS_referrals"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/inside_lLayoutReferBySMS_referrals"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/sms128g" />
+
+                <TextView
+                    android:id="@+id/tvReferBySMS_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:alpha="0.90"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:minHeight="40dp"
+                    android:text="Refer by SMS"
+                    android:textColor="#000000"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrownext128g" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewAboveReferByEmail_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lLayoutReferBySMS_referrals"
+            android:alpha="0.70"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutReferByEmail_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewAboveReferByEmail_referrals"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/inside_lLayoutReferByEmail_referrals"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/email128g" />
+
+                <TextView
+                    android:id="@+id/tvReferByEmail_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:alpha="0.90"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:minHeight="40dp"
+                    android:text="Refer by Email"
+                    android:textColor="#000000"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrownext128g" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewAboveFacebook_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lLayoutReferByEmail_referrals"
+            android:alpha="0.70"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutFacebook_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewAboveFacebook_referrals"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/inside_lLayoutFacebook_referrals"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/fb128g" />
+
+                <TextView
+                    android:id="@+id/tvFacebook_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:alpha="0.90"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:minHeight="40dp"
+                    android:text="Facebook"
+                    android:textColor="#000000"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrownext128g" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewAboveTwitter_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lLayoutFacebook_referrals"
+            android:alpha="0.70"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutTwitter_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewAboveTwitter_referrals"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/inside_lLayoutTwitter_referrals"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/tweeter128g" />
+
+                <TextView
+                    android:id="@+id/tvTwitter_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:alpha="0.90"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:minHeight="40dp"
+                    android:text="Twitter"
+                    android:textColor="#000000"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrownext128g" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewAboveGooglePlus_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lLayoutTwitter_referrals"
+            android:alpha="0.70"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/lLayoutGooglePlus_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewAboveGooglePlus_referrals"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/inside_lLayoutGooglePlus_referrals"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/googleplus128g" />
+
+                <TextView
+                    android:id="@+id/tvGooglePlus_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:alpha="0.90"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:minHeight="40dp"
+                    android:text="Google+"
+                    android:textColor="#000000"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrownext128g" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewBelowGooglePlus_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lLayoutGooglePlus_referrals"
+            android:alpha="0.70"
+            android:background="#000000" />
+        
+         <LinearLayout
+            android:id="@+id/lLayoutwhatsapp_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewBelowGooglePlus_referrals"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/inside_lLayoutwhatsapp_referrals"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/whatsapp128g" />
+
+                <TextView
+                    android:id="@+id/tvwhatsapp_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:alpha="0.90"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:minHeight="40dp"
+                    android:text="Whatsapp"
+                    android:textColor="#000000"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/arrownext128g" />
+            </LinearLayout>
+        </LinearLayout>
+        
+         <View
+            android:id="@+id/viewBelowwhatsapp_referrals"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lLayoutwhatsapp_referrals"
+            android:alpha="0.70"
+            android:background="#000000" />
+         
+         
+        
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

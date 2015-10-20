@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9" 
+    >
+
+    <ImageView
+        android:id="@+id/imgMydeal_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/restaurentlist_1" />
+
+    <TextView
+        android:id="@+id/txtNameOfRestaurent_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#bb181818"
+        android:paddingLeft="5dp"
+        android:text=""
+        android:textColor="#ffffff" 
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/txtCoupon_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtNameOfRestaurent_Mydeal"
+        android:background="#bb181818"
+        android:paddingLeft="5dp"
+        android:text=""
+        android:textColor="#d9d9d9"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtStatus_Mydeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#d9d9d9"
+        android:textColor="#181818"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutRestaurantLocation_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgMydeal_Mydeal"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgRestaurantLocation_Mydeal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/location64g" />
+
+        <TextView
+            android:id="@+id/txtRestaurantLocation_Mydeal"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewRestaurantTime_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/lLayoutTime_Mydeal"
+        android:background="#464646" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutTime_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lLayoutRestaurantLocation_Mydeal"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgTime_Mydeal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/time64g" />
+
+        <TextView
+            android:id="@+id/txtTime_Mydeal"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewRestaurantOffer_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/lLayoutOffer_Mydeal"
+        android:background="#464646" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutOffer_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lLayoutTime_Mydeal"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgOffer_Mydeal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/offer64g"
+             />
+
+        <TextView
+            android:id="@+id/txtOffer_Mydeal"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewRestaurantLocation_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lLayoutOffer_Mydeal"
+        android:background="#464646" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutBottomButtons_Mydeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCheckIn_Mydeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="#464646"
+            android:drawableTop="@drawable/checkinw"
+            android:paddingTop="4dp"
+            android:text="Check-In"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnCall_Mydeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5"
+            android:background="#464646"
+            android:drawableTop="@drawable/callw"
+            android:paddingTop="4dp"
+            android:text="Call to Book Table"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnCancle_Mydeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="#464646"
+            android:drawableTop="@drawable/closec64w"
+            android:paddingTop="4dp"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

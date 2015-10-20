@@ -1,0 +1,49 @@
+{
+    "Restaurentdetails": [
+        {
+            "id": "001",
+            "name": "Restaurent A",
+            "location": "Kothrud near mcdonald",
+            "foodtype": "fast food",
+            "distance": "3km",
+            "live detail": "Live:20% Off on 3 course Dinner",
+            "Restaurent_img": "http://placekitten.com/450/300"
+        },
+        {
+            "id": "002",
+            "name": "Restaurent B",
+            "location": "Kothrud near karvenagar",
+            "foodtype": "Thai food",
+            "distance": "2km",
+            "live detail": "Live:60% Off on 2 course Dinner",
+            "Restaurent_img": "http://placehold.it/350x150&text=Hello World"
+        },
+        {
+            "id": "002",
+            "name": "Restaurent C",
+            "location": "Kothrud depo",
+            "foodtype": "sea food",
+            "distance": "2km",
+            "live detail": "Live:40% Off on 4 course lunch",
+            "Restaurent_img": "http://lorempixel.com/g/400/100/sports/"
+        },
+        {
+            "id": "003",
+            "name": "Restaurent D",
+            "location": "Kothrud bus stop",
+            "foodtype": "fast food",
+            "distance": "2km",
+            "live detail": "Live:80% Off on 3 course Dinner",
+            "Restaurent_img": "http://lorempixel.com/g/400/100/sports/"
+        },
+        {
+            "id": "004",
+            "name": "Restaurent E",
+            "location": "Kothrud near chandnichok",
+            "foodtype": "fast food",
+            "distance": "2km",
+            "live detail": "Live:85% Off on 2 course Breakfast",
+            "Restaurent_img": "http://lorempixel.com/g/400/100/sports/"
+        }
+    ]
+}
