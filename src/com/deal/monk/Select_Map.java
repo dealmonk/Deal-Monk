@@ -33,6 +33,7 @@ public class Select_Map extends Activity implements OnInfoWindowClickListener {
 	double latitude ;
 	double longitude;	
 	private String Restaurant_Id ="";
+	private HashMap<String, String> hashMapPair;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +82,7 @@ public class Select_Map extends Activity implements OnInfoWindowClickListener {
 
 			// Instantiates a new CircleOptions object and defines the center
 			// and radius
-
+			hashMapPair = new HashMap<>();
 			CircleOptions circleOptions = (new CircleOptions()
 					.center(new LatLng(latitude, longitude)).radius(5000) // In	// meters
 					// .fillColor(Color.GREEN)
@@ -96,7 +97,7 @@ public class Select_Map extends Activity implements OnInfoWindowClickListener {
 			googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 							
 				ArrayList<LiveDetailsModel> liveDetailsModels = ((Select)getParent()).getLiveDetails();
-				final Map<Marker, LiveDetailsModel> hashMap = new HashMap<>();
+			//	final Map<Marker, LiveDetailsModel> hashMap = new HashMap<>();
 				
 				for (int i = 0; i < liveDetailsModels.size(); i++) {
 					
@@ -107,10 +108,13 @@ public class Select_Map extends Activity implements OnInfoWindowClickListener {
 					.snippet(liveDetailsModels.get(i).getLive_detail());
 
 					Marker marker = googleMap.addMarker(markerOptions);
-					hashMap.put(marker, liveDetailsModels.get(i));
+					Log.d(TAG, marker.getTitle());
+					hashMapPair.put(liveDetailsModels.get(i).getName(), liveDetailsModels.get(i).getId());
+					Log.d(TAG, liveDetailsModels.get(i).getName());
+					Log.d(TAG, hashMapPair.get(liveDetailsModels.get(i).getName()));
 					
 					Restaurant_Id  =liveDetailsModels.get(i).getId();
-					
+						
 					/*DealMonkPreferences dealMonkPreferences = DealMonkPreferences.getInstance(Select_Map.this);
 					dealMonkPreferences.setString("restaurant_latitude", liveDetailsModels.get(i).getLatitude());
 					dealMonkPreferences.setString("restaurant_longitude", liveDetailsModels.get(i).getLongitude());*/
@@ -125,11 +129,16 @@ public class Select_Map extends Activity implements OnInfoWindowClickListener {
 						//String id = liveDetailsModel.getId();
 						
 					//	Log.d("id is ", id);
+						Log.d(TAG, marker.getTitle());
+						String id = hashMapPair.get(marker.getTitle());
+						if (id != null)
+						Log.d(TAG, id);
+//						
 						
 //						String id = marker.getTitle();				
 						Intent pass = new Intent(Select_Map.this, Deal.class);
 						DealMonkPreferences dealMonkPreferences = DealMonkPreferences.getInstance(Select_Map.this);
-						dealMonkPreferences.setString("restaurant_id_for_offers", Restaurant_Id);
+						dealMonkPreferences.setString("restaurant_id_for_offers", id);
 				//		dealMonkPreferences.setString("restaurant_latitude", liveDetailsModel.getLatitude());
 				//		dealMonkPreferences.setString("restaurant_longitude", liveDetailsModel.getLongitude());
 						startActivity(pass);
